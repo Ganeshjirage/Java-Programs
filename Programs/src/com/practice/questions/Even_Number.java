@@ -2,23 +2,22 @@ package com.practice.questions;
 
 import java.util.Scanner;
 
-public class Demo1 {
+public class Even_Number {
 
 	public static void main(String[] args) {
-		
+		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
-		
+
 		System.out.println("Enter the number>>");
 		int number = scan.nextInt();
-		
-		Demo1 demo = new Demo1();
-		int i = number;
-		if(i%2==0) {
-			System.out.println("the number is even");
-		}else {
-			System.out.println("The number is not even");
-		}
 
+		Even_Number demo = new Even_Number();
+		int i = number;
+		if (i % 2 == 0) {
+			System.out.println("the number is Even");
+		} else {
+			System.out.println("The number is Odd");
+		}
 	}
 
 }
