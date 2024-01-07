@@ -1,23 +1,24 @@
 package com.practice.questions;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Demo {
 
-	public static boolean anagrams(String s1, String s2) {
+	public static boolean anagrams(String str1, String str2) {
 		
 		//converted string values into lower-case to compare the length 
-		s1 = s1.toLowerCase();
-		s2 = s2.toLowerCase();
+		str1 = str2.toLowerCase();
+		str1 = str2.toLowerCase();
 		
 		//if the length of both string values are not equal then it will return  false
-		if (s1.length() != s2.length()) {
+		if (str1.length() != str2.length()) {
 			return false;
 		}
 		
 		//converted the string values into character array to sort them
-		char[] char1 = s1.toCharArray();
-		char[] char2 = s1.toCharArray();
+		char[] char1 = str1.toCharArray();
+		char[] char2 = str2.toCharArray();
 
 		Arrays.sort(char1);
 		Arrays.sort(char2);
@@ -30,14 +31,18 @@ public class Demo {
 		
 		//Declared and initialized string values that i need to check whether 
 		//the given string values are anagrams or not
-		String s1 = "listen";
-		String s2 = "silent";
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter first word>> ");
+		String str1 =scan.nextLine();
+		
+		System.out.println("Enter second word>> ");
+		String str2 =scan.nextLine();
 		
 		//anagrams method is called and verified whether the given value is anagram or not using if else loop.
-		if (anagrams(s1, s2)) {
-			System.out.println(s1 + " and " + s2 + " are anagrams");
+		if (anagrams(str1, str2)) {
+			System.out.println(str1 + " and " + str2 + " are anagrams");
 		} else {
-			System.out.println(s1 + " and " + s2 + " are not anagrams");
+			System.out.println(str1 + " and " + str2 + " are not anagrams");
 		}
 	}
 
