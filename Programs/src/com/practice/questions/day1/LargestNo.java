@@ -1,4 +1,4 @@
-package com.practice.questions;
+package com.practice.questions.day1;
 
 import java.util.Scanner;
 
