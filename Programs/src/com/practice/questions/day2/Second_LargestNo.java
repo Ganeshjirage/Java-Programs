@@ -11,7 +11,7 @@ public class Second_LargestNo {
 		System.out.println("Enter the size of Array >> ");
 		int arr = scan.nextInt();
 
-		int[] numbers = new int[arr];
+		int numbers[] = new int[arr];
 
 		System.out.println("Enter the elements in an array >> ");
 
@@ -27,7 +27,7 @@ public class Second_LargestNo {
 		// 4th index so the second last number is printed and second last element is
 		// second last large number
 
-		System.out.println("Second largest number: " + secondLargest);
+		System.out.println("Second largest number is " + secondLargest);
 	}
 
 }
