@@ -1,4 +1,4 @@
-package com.multithreading.withdrawal.withdrawal_of_Money;
+package com.practice.questions.withdrawal_of_Money;
 
 public class Account {
 	private int balance = 5000;
